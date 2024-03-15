@@ -7,7 +7,6 @@
 
 header {
   font-family: sans-serif;
-  height: 3rem;
 }
 header h1 {
   margin: 0;
@@ -27,4 +26,13 @@ header p {
   font-weight: 600;
   position: absolute;
   top: 1rem;
+}
+header img {
+  height: 7rem;
+  float: right;
+}
+
+main {
+  margin: 0;
+  padding-top: 7rem;
 }
