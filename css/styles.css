@@ -1,0 +1,30 @@
+#container {
+  width: 8.5in;
+  height: 11in;
+  margin: 3rem;
+  border: 1px black solid;
+}
+
+header {
+  font-family: sans-serif;
+  height: 3rem;
+}
+header h1 {
+  margin: 0;
+  position: absolute;
+  top: 1.75rem;
+  left: 2.75rem;
+  font-weight: 800;
+  font-size: 5rem;
+  text-transform: lowercase;
+}
+header h1 em {
+  color: brown;
+  font-style: normal;
+}
+header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+}
