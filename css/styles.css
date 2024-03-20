@@ -28,11 +28,46 @@ header p {
   top: 1rem;
 }
 header img {
+  position: absolute;
+  left: 680px;
   height: 7rem;
   float: right;
 }
 
 main {
+  width: 100%;
   margin: 0;
-  padding-top: 7rem;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+article {
+  width: auto;
+  grid-column: 2;
+  /* A Dog Day Afternoon styles */
+  /* On the slopes styles */
+}
+article:nth-of-type(1) img {
+  width: 33%;
+  float: right;
+  margin-left: 66%;
+}
+article:nth-of-type(2) {
+  border: orange 1px solid;
+}
+article:nth-of-type(2) img {
+  width: 100%;
+}
+
+aside {
+  grid-column: 1;
+  position: relative;
+  top: 102px;
+}
+aside:nth-of-type(1) {
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 0 2rem;
 }
