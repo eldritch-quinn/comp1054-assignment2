@@ -1,3 +1,8 @@
+
+
+*
+    box-sizing: border-box
+
 // Margin for the edges of the document
 #container
     width: 8.5in
@@ -45,16 +50,33 @@ main
     
     display: grid
     grid-auto-flow: dense // <-- This was the hardest part of this entire assignment, finding this css value lol
-    grid-template-columns: 1fr 2fr
-    
+    grid-template-columns: 250px auto
     gap: 3rem
 
 article
+    margin-right: 3rem 
+    font-family: sans-serif
     width: auto
     grid-column: 2
 
     /* A Dog Day Afternoon styles */
     &:nth-of-type(1)
+
+        h2, p
+            margin: 0
+
+        h2
+            color: brown
+            font-size: 2rem
+        
+        p
+            text-align: justify
+            font-size: .8rem
+            line-height: 1.1rem
+
+        
+
+
         img
             width: 33%
             float: right
@@ -62,7 +84,10 @@ article
 
     /* On the slopes styles */
     &:nth-of-type(2)
-        border: orange 1px solid
+
+        a
+            white-space: normal
+
         img
             width: 100%
 
@@ -70,11 +95,17 @@ aside
     grid-column: 1
     position: relative
     top: +102px
+    width: 100%
+
     // Breast Cancer Snowshoe Series
     &:nth-of-type(1)
         font-family: sans-serif
-        font-weight: 500
-        padding: 0 2rem
+        font-size: 20px
+        padding: 0 2.3rem
+        border-right: 1px black solid
+        p
+            word-spacing: .2em
+            margin: 0
 
     // A-Corlling We Go!
     &:nth-of-type(2)

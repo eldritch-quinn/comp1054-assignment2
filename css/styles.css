@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #container {
   width: 8.5in;
   height: 11in;
@@ -39,23 +43,37 @@ main {
   margin: 0;
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 250px auto;
   gap: 3rem;
 }
 
 article {
+  margin-right: 3rem;
+  font-family: sans-serif;
   width: auto;
   grid-column: 2;
   /* A Dog Day Afternoon styles */
   /* On the slopes styles */
+}
+article:nth-of-type(1) h2, article:nth-of-type(1) p {
+  margin: 0;
+}
+article:nth-of-type(1) h2 {
+  color: brown;
+  font-size: 2rem;
+}
+article:nth-of-type(1) p {
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 article:nth-of-type(1) img {
   width: 33%;
   float: right;
   margin-left: 66%;
 }
-article:nth-of-type(2) {
-  border: orange 1px solid;
+article:nth-of-type(2) a {
+  white-space: normal;
 }
 article:nth-of-type(2) img {
   width: 100%;
@@ -65,9 +83,15 @@ aside {
   grid-column: 1;
   position: relative;
   top: 102px;
+  width: 100%;
 }
 aside:nth-of-type(1) {
   font-family: sans-serif;
-  font-weight: 500;
-  padding: 0 2rem;
+  font-size: 20px;
+  padding: 0 2.3rem;
+  border-right: 1px black solid;
+}
+aside:nth-of-type(1) p {
+  word-spacing: 0.2em;
+  margin: 0;
 }
