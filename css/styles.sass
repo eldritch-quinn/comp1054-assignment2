@@ -59,23 +59,22 @@ article
     width: auto
     grid-column: 2
 
+    p
+        text-align: justify
+        font-size: .9rem
+        line-height: 1.1rem
+        &::first-line
+            font-weight: 600
+
+    h2, p
+        margin: 0
+
     /* A Dog Day Afternoon styles */
     &:nth-of-type(1)
-
-        h2, p
-            margin: 0
 
         h2
             color: brown
             font-size: 2rem
-        
-        p
-            text-align: justify
-            font-size: .8rem
-            line-height: 1.1rem
-
-        
-
 
         img
             width: 33%
@@ -85,8 +84,19 @@ article
     /* On the slopes styles */
     &:nth-of-type(2)
 
-        a
-            white-space: normal
+        h2
+            font-family: Arial, Helvetica, sans-serif
+            font-size: 3.7rem
+            
+            font-weight: 5 // Why can I not go thinner >:(
+            
+            // Glad I caught this
+            text-transform: lowercase
+            &::first-letter
+                text-transform: uppercase
+        p
+            font-family: serif
+            
 
         img
             width: 100%
@@ -106,6 +116,8 @@ aside
         p
             word-spacing: .2em
             margin: 0
+        a
+            white-space: normal
 
     // A-Corlling We Go!
     &:nth-of-type(2)
