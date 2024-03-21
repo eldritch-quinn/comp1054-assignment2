@@ -19,17 +19,18 @@
 
 html {
   rotate: -0.5deg;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 35%, rgba(241, 220, 227, 0.8) 45%, rgba(0, 0, 0, 0) 55%);
-  background-repeat: no-repeat;
   max-width: 8.5in;
 }
 
 #container {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 35%, rgba(241, 220, 227, 0.8) 45%, rgba(0, 0, 0, 0) 55%);
+  background-repeat: no-repeat;
   width: 8.5in;
   height: 11in;
   margin: 3rem;
   margin-right: 0;
   border: 1px black solid;
+  overflow: hidden;
 }
 
 header {
