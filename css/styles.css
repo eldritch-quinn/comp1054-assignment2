@@ -1,5 +1,18 @@
 @charset "UTF-8";
-/* Many of my comments are in my .sass file, since most don't carry over! */
+/* Many of my comments are in my .sass file, since some don't carry over!
+ *  also if you use the -small variant for the images, 
+ *  remove the sass file, 
+ *      61kb    - images
+ *      4.56kb  - html
+ *      4.06kb  - css
+ *  * the website's size comes to..
+ *  *     a grand total of.. 
+ *  *                  _         _____ ___  _    _      
+ *  *       ___  _ __ | |_   _  |___  / _ \| | _| |__   
+ *  *      / _ \| '_ \| | | | |    / / | | | |/ / '_ \  
+ *  *     | (_) | | | | | |_| |   / /| |_| |   <| |_) | 
+ *  *      \___/|_| |_|_|\__, |  /_/  \___/|_|\_\_.__(_)
+ *  *                    |___/ */
 * {
   box-sizing: border-box;
 }
@@ -9,7 +22,6 @@ html {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 35%, rgba(241, 220, 227, 0.8) 45%, rgba(0, 0, 0, 0) 55%);
   background-repeat: no-repeat;
   max-width: 8.5in;
-  overflow-x: hidden;
 }
 
 #container {
@@ -57,8 +69,6 @@ article {
   font-family: sans-serif;
   width: auto;
   grid-column: 2;
-  /* A Dog Day Afternoon styles */
-  /* On the slopes styles */
 }
 article p {
   text-align: justify;
