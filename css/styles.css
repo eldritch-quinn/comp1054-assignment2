@@ -28,6 +28,7 @@ html {
   width: 8.5in;
   height: 11in;
   margin: 3rem;
+  margin-right: 0;
   border: 1px black solid;
 }
 
