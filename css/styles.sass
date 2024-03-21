@@ -1,4 +1,4 @@
-
+$red : #d43132
 
 *
     box-sizing: border-box
@@ -37,7 +37,7 @@ header
         text-transform: lowercase
         
         em
-            color: brown
+            color: $red
             font-style: normal
     p
         text-transform: uppercase
@@ -82,7 +82,7 @@ article
     &:nth-of-type(1)
 
         h2
-            color: brown
+            color: $red
             font-size: 2rem
 
         img
@@ -92,6 +92,8 @@ article
 
     /* On the slopes styles */
     &:nth-of-type(2)
+        position: relative 
+        top: -4rem
         
         h2
             font-family: Arial, Helvetica, sans-serif
@@ -152,7 +154,7 @@ aside
 
         // the header for the A-caroling be go
         h2
-            color: brown
+            color: $red
             font-size: 1.3rem
             float: right
             
