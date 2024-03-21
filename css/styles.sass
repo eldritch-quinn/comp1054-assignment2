@@ -5,7 +5,9 @@ $red : #d43132
     box-sizing: border-box
 
 html
+    // ROTATE THE WHOLE DOCUMENT!
     rotate: -.5deg
+    // add grimey pink stain
     background: linear-gradient(90deg, rgba(0,0,0,0) 35%, rgba(241,220,227,.8) 45%, rgba(0,0,0,0) 55%)
     background-repeat: no-repeat
     max-width: 8.5in
@@ -14,6 +16,7 @@ html
 
 // Margin for the edges of the document
 #container
+    // force document to be size of page
     width: 8.5in
     height: 11in
     margin: 3rem
@@ -26,31 +29,37 @@ header
     
     // H1
     h1
+        //remove margin
         margin: 0
 
+        // adjust position to top left and remove it from flow
         position: absolute
         top: 1.75rem
         left: 2.75rem
         
+        // bold it and make it larger
         font-weight: 800
         font-size: 5rem
 
+        // transform the text and lowercase it
         text-transform: lowercase
         
+        
         em
+            // set it to a special red
             color: $red
+            // remove the styles
             font-style: normal
     p
+        // raise the case to uppercase
         text-transform: uppercase
+        
+        // bolden the text
         font-weight: 600
 
+        // place it ate the top of the document
         position: absolute
         top: 1rem
-    img
-        position: absolute
-        left: 680px
-        height: 7rem
-        float: right
 
 // Main Styles
 main
@@ -64,29 +73,39 @@ main
     gap: 3rem
 
 article
+
+    // adjust the margin and setting the grid column to the right one
     margin-right: 3rem 
     font-family: sans-serif
     width: auto
     grid-column: 2
 
     p
+        // justify the text to fill to the edges
         text-align: justify
+
+        // lower the font size and increase the line height
         font-size: .9rem
         line-height: 1.1rem
+
         &::first-line
+            // bolden the first line of text
             font-weight: 600
 
     h2, p
+        // remove the margin
         margin: 0
 
     /* A Dog Day Afternoon styles */
     &:nth-of-type(1)
 
         h2
+            // set the colour to red and increase the font size
             color: $red
             font-size: 2rem
 
         img
+            // set the width of the image to be a third, float it to the right, and add a margin so it doesn't wrap
             width: 33%
             float: right
             margin-left: 66%
@@ -117,15 +136,18 @@ article
             font-weight: 700
         
         mark
+            // add that weird stain gradient to the back of this text
             background: linear-gradient(90deg, rgba(217,206,210,0.5) 0%, rgba(217,206,210,1) 33%, rgba(217,206,210,0.1) 66%, rgba(217,206,210,0.3) 100%)
 
         img
+            // make the image the whole width of the section
             width: 100%
 
 aside
     font-family: sans-serif
     grid-column: 1
     position: relative
+    // move it up to account for weird margin space
     top: +102px
     width: 100%
 
@@ -160,13 +182,15 @@ aside
             float: right
             
             margin-right: .2rem
-            // This adds that giant plus beside the h2 in the article
+
             &::before
+                // This adds that giant red plus beside the h2 in the article
                 color: black
                 content: '＋'
                 font-size: 5rem
                 font-weight: 300
                 position: absolute
+                // set it to the correct postion
                 left: -15px
                 top: -15px
 
@@ -185,30 +209,36 @@ aside
                     margin: 0
                     line-height: 1.2rem
                 h3::before
+                    // add those special list pluses
                     position: absolute
                     left: 1rem
                     content: "+"
                     font-weight: lighter
                 a
+                    // remove the default styles for the link 
                     font-weight: bold
                     text-decoration: none
                     color: black
 
 footer
+    // set it to a static postion on the bottom
     position: static
     bottom: 0
     font-family: sans-serif
 
+    // lower and crush the font size
     font-size: .8rem
     transform: scaleY(.8)
     text-transform: lowercase
     em
+        // increase the size of the font and bolden it
         font-size: 1rem
         font-weight: bold
         font-style: normal
         padding-right: .5rem
 
     abbr[title] // set this to title to override the normalize
+        // set the speical styles to bolden and move it
         text-decoration: none
         text-transform: uppercase
         font-weight: bolder

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Many of my comments are in my .sass file, since some don't carry over! */
+/* Many of my comments are in my .sass file, since most don't carry over! */
 * {
   box-sizing: border-box;
 }
@@ -40,12 +40,6 @@ header p {
   font-weight: 600;
   position: absolute;
   top: 1rem;
-}
-header img {
-  position: absolute;
-  left: 680px;
-  height: 7rem;
-  float: right;
 }
 
 main {
